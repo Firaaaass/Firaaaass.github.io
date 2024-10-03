@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Strava Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Strava Dashboard</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#club-info">Club Info</a></li>
+                <li><a href="#activities">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h2>Welcome to the Strava Club Page</h2>
+            <p>Track your progress, see club activities, and engage with your team!</p>
+            <button onclick="loadClubData()">Load Club Info</button>
+        </div>
+    </section>
+
+    <section id="club-info">
+        <h2>Club Information</h2>
+        <div id="club-details">
+            <p>Click the button to load club data.</p>
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>Recent Activities</h2>
+        <ul id="activity-list">
+            <p>Loading activities...</p>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Strava Dashboard</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
